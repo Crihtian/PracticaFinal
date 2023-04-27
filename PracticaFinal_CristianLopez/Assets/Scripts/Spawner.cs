@@ -8,21 +8,21 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Transform[] spawPoint;
 
     [SerializeField] private float timeSpawn;
-   // [SerializeField] private float timeDespawn;
+   
 
     private void Start()
     {
         StartCoroutine(SpawnTimer());
     }
 
-    private void SpawnCars()
+    private void SpawnDucks()
     {
         int randDuckIndex = Random.Range(0, duck.Length);
         int randSpawnIndex = Random.Range(0, spawPoint.Length);
 
 
         GameObject newDuck = Instantiate(duck[randDuckIndex], spawPoint[randSpawnIndex].position, spawPoint[randSpawnIndex].rotation);
-       // Destroy(newDuck, timeDespawn);
+       
     }
 
     private IEnumerator SpawnTimer()
@@ -30,7 +30,7 @@ public class Spawner : MonoBehaviour
         while (true)
         {
 
-            SpawnCars();
+            SpawnDucks();
             yield return new WaitForSeconds(timeSpawn);
 
         }

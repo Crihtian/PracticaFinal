@@ -19,4 +19,6 @@ public class DuckMove : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
 }

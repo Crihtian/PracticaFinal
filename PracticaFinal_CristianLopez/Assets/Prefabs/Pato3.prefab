@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6912836465357816027}
   - component: {fileID: 8049777633601958018}
-  - component: {fileID: 2951779314936277359}
   - component: {fileID: 7949889335202310370}
+  - component: {fileID: 2951779314936277359}
+  - component: {fileID: 5917650773610288837}
   m_Layer: 3
   m_Name: Pato3
   m_TagString: Duck
@@ -61,19 +62,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2100496, y: 1.605025}
   m_EdgeRadius: 0
---- !u!114 &2951779314936277359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470970842678072092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91605a4bee05b514f98be68a4de7900f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
 --- !u!50 &7949889335202310370
 Rigidbody2D:
   serializedVersion: 4
@@ -95,6 +83,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2951779314936277359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470970842678072092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91605a4bee05b514f98be68a4de7900f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+--- !u!114 &5917650773610288837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470970842678072092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 791b286b21082734fad1ed189f2285cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duckHits: 3
 --- !u!1 &1608247525608684883
 GameObject:
   m_ObjectHideFlags: 0
